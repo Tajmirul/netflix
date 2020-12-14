@@ -1,0 +1,140 @@
+h2.section-heading {
+    font-size: 3.9rem;
+    color: $color-theme;
+    font-weight: 500;
+}
+
+h2.heading-primary {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: $color-dark;
+    padding: 4px 1.1rem;
+    display: inline-block;
+    padding-right: 2.5rem;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+
+    &.light {
+        color: $color-dark;
+        background-color: $color-white;
+    }
+}
+
+h3.heading-secoundary {
+    font-size: 29px;
+    color: $color-theme;
+}
+
+h5.heading-tertiary {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: $color-theme;
+}
+
+// go to top button -------------------------
+.go-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #004e00;
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    @include flex-center;
+    transform: translateY(2rem);
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+
+.add{
+    font-size: 2rem;
+    @include flex-center;
+    width: 100%;
+    background: rgba($color-black, .3);
+}
+
+// slider 
+.arrows{
+    z-index: 1;
+    background: $color-theme;
+    border-radius: 50%;
+    color: $color-white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+
+    &.prev{
+        left: 3px;
+    }
+    &.next{
+        right: 2px;
+    }
+}
+
+
+ul.main-ul{
+    width: 100%;
+    max-width: 70rem;
+    li{
+        display: block;
+        padding: 1rem 0;
+
+        a{
+            float: left;
+            transition: .3s;
+
+            &:hover{
+                transform: translateX(1rem);
+                color: $color-theme !important;
+            }
+        }
+
+        i{
+            float: right;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+        ul{
+            padding: 1rem 2rem;
+            clear: both;
+            // background: rgba($color-black, .07);
+            display: none;
+        }
+    }
+}
+
+.add-space {
+    padding: 4rem 0;
+    width: 100%;
+    background-color: $color-theme;
+    color: $color-white;
+    font-size: 3rem;
+    text-align: center;
+}

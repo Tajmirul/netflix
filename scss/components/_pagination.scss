@@ -1,0 +1,16 @@
+.pagination {
+	display: unset;
+
+	a {
+		font-size: 1.6rem;
+		background-color: $color-dark;
+		color: $color-white;
+		padding: .5rem 1rem;
+		margin: 0 .5rem;
+		text-decoration: none;
+
+		i {
+			margin-left: 1rem;
+		}
+	}
+}

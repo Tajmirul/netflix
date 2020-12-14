@@ -1,0 +1,32 @@
+.search-box {
+	display: flex;
+	position: relative;
+	font-size: 1.3rem;
+	// max-width: 50rem;
+
+	form {
+		width: 100%;
+	}
+
+	input {
+		color: #5d5d5d;
+		padding: 1.1rem 1.8rem;
+		border: none;
+		background-color: $color-light;
+		display: block;
+		width: 100%;
+		border-radius: 5px;
+	}
+	button {
+		background-color: $color-theme;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 3.6rem;
+		border: none;
+		color: $color-white;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}

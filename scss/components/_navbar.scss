@@ -1,0 +1,26 @@
+.nav {
+	padding: 2rem 0;
+
+	.desktop-nav {
+		ul {
+			li {
+				display: inline-block;
+
+
+				a {
+					display: block;
+					font-size: 1.6rem;
+					padding: 1rem;
+					color: $text-black;
+					text-decoration: none;
+
+					&.nav-bar-btn {
+						background-color: $color-theme;
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,20 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin card-line {
+	&::after {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 3px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $color-theme;
+		transition: .3s;
+		z-index: 1;
+	}
+}

@@ -1,0 +1,42 @@
+.banner {
+	position: relative;
+
+	&-slider {
+		.slide {
+
+		}
+	}
+
+	&-slider-dots {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+
+		ul {
+			position: unset;
+
+			li {
+				display: inline-block;
+
+				button {
+					background-color: $color-white;
+					border-radius: 50%;
+					height: 12px;
+					width: 12px;
+
+					&:before {
+						content: '';
+					}
+				}
+
+				&.slick-active {
+					button {
+						// background-color: darken($color-white, 30);
+						background-color: $color-theme;
+					}
+				}
+			}
+		}
+	}
+}

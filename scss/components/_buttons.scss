@@ -1,0 +1,23 @@
+.button {
+	box-shadow: 0px 1px 2px 0px rgba(1, 1, 1, 0.22);
+	font-size: 1.5rem;
+	color: $text-black;
+	text-decoration: none;
+	border-radius: 2px;
+	padding: 1rem 2rem;
+	display: inline-block;
+
+	&.type-theme {
+		background-color: $color-theme;
+	}
+
+	&.type-white {
+		background-color: $color-white;
+		color: $color-black;
+
+		&.active {
+			color: $color-white;
+			background-color: $color-theme;
+		}
+	}
+}
