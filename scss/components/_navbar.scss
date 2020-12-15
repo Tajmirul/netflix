@@ -22,5 +22,35 @@
 			}
 		}
 	}
+
+	.mobile-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+		background-color: rgba($color-black, .9);
+		display: none;
+
+		.close-mobile-menu {
+			position: absolute;
+			top: 1rem;
+			right: 2rem;
+		}
+
+		ul{
+			margin-top: 5rem;
+
+			li{
+				a{
+					display: block;
+					padding: .5rem 2rem;
+					font-size: 1.6rem;
+					color: $color-white;
+				}
+			}
+		}
+	}
 }
 

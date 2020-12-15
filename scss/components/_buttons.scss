@@ -9,6 +9,11 @@
 
 	&.type-theme {
 		background-color: $color-theme;
+		color: $color-white;
+
+		&:hover {
+			
+		}
 	}
 
 	&.type-white {

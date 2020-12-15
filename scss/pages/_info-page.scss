@@ -1,0 +1,59 @@
+.product-img {
+	position: relative;
+
+	img {
+
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($color-dark, .8);
+		@include flex-center;
+		opacity: 0;
+		transition: .3s;
+
+		i {
+			color: $color-white;
+		}
+	}
+
+	&:hover {
+		.overlay {
+			opacity: 1;
+		}
+	}
+}
+
+.slider-4 {
+	&[data-arrows=small] {
+		.arrows {
+			height: 3rem;
+			width: 3rem;
+		}
+	}
+}
+
+.product-feature {
+	p {
+		margin-bottom: .5rem;
+		background-color: lighten($color-theme, 5);
+		color: $color-white;
+		padding: 8px 0;
+		padding-left: 6rem;
+		position: relative;
+
+		span:first-child {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 4.5rem;
+			@include flex-center;
+			background-color: darken($color-theme, 2);
+		}
+	}
+}
