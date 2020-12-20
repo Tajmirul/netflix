@@ -1,5 +1,5 @@
 .button {
-	box-shadow: 0px 1px 2px 0px rgba(1, 1, 1, 0.22);
+	// box-shadow: 0px 1px 2px 0px rgba(1, 1, 1, 0.22);
 	font-size: 1.5rem;
 	color: $text-black;
 	text-decoration: none;
@@ -20,9 +20,19 @@
 		background-color: $color-white;
 		color: $color-black;
 
-		&.active {
+		&.active, &:hover {
 			color: $color-white;
 			background-color: $color-theme;
+		}
+	}
+
+	& i {
+		transition: .3s;
+	}
+
+	&:hover {
+		i {
+			transform: translateX(4px);
 		}
 	}
 }

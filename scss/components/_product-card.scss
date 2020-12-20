@@ -40,6 +40,12 @@
 
 		i {
 			margin-left: 1rem;
+			transition: .3s;
+		}
+		&:hover {
+			i {
+				transform: translateX(.5rem);
+			}
 		}
 	}
 

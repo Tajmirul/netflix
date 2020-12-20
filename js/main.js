@@ -71,31 +71,25 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.slider-3').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+        prevArrow: '<i class="arrows far fa-chevron-left left"></i>',
+        nextArrow: '<i class="arrows far fa-chevron-right right"></i>',
+        infinite: false,
+        autoplay: true,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					autoplay: true
+				}
+			}
+		]
+	});
+
 //     // my code ----------------------------------------------------------------------
-//     // preloader
-//     $(".preloader").animate({
-//         top: -2000000
-//     }, 1500);
-
-//     // sticky menu ber and go to top button
-//     $(window).scroll(function () {
-//         var scrolled = $(window).scrollTop();
-//         var topMain = $('main').offset().top - 400;
-
-//         // go to top button
-//         if (scrolled > topMain) {
-//             $('.go-to-top').addClass('active');
-//             $('.nav-outer').addClass('sticky');
-
-//             $('.go-to-top').click(function () {
-//                 $(window).scrollTop(0);
-//             });
-//         } else {
-//             $('.go-to-top').removeClass('active');
-//             $('.nav-outer').removeClass('sticky')
-//         }
-//         // console.log(scrolled);
-//     });
 
 //     // menu bar open -------------------------
     $('.open-mobile-menu ').click(function () {
@@ -106,6 +100,10 @@ $(document).ready(function () {
         $('.mobile-menu').fadeOut(200);
     });
 
+    $('.mobile-menu ul li i').click(function() {
+    	$(this).siblings('ul').slideToggle(200);
+    });
+
 	let sliderInput = $('.slider-input');
 	let sliderOutput = $('.slider-output .number');
 
@@ -113,8 +111,6 @@ $(document).ready(function () {
 		sliderOutput.text(sliderInput[0].value);
 
 		sliderInput.on('change', function() {
-			console.log($(this).value)
-
 			sliderOutput.text($($(this)[0]).val());
 		});
 	};
@@ -131,6 +127,5 @@ $(document).ready(function () {
 			$('.product-img img').attr('src', $(item).children('img').attr('src'));
 			$('.product-img[data-popup=true] a').attr('href', $('.product-img[data-popup=true] img').attr('src'));
 		});
-	});	
-
+	});
 });
