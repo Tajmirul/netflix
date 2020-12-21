@@ -26,13 +26,21 @@
 
 .slider-3 {
     .arrows {
+        background-color: #888888;
+        color: $color-white;
+
         &.prev{
             left: 0;
-            transform: translateX(-100%);
+            // transform: translateX(-100%);
         }
         &.right{
             right: 0;
-            transform: translateX(-100%);
+            // transform: translateX(-100%);
         }
     }
+}
+
+.slider-8 {
+    background-color: #fff;
+    padding: 3rem 0;
 }

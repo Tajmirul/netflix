@@ -133,9 +133,10 @@ h6 {
 ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 
 	li {
-		list-style: none
+
 	}
 }
 
@@ -143,7 +144,6 @@ p {
 	font-size: 1.4rem;
 	font-weight: normal;
 	line-height: 2.4rem;
-	color: #7e7e7e;
 	margin-bottom: 1.5rem;
 }
 

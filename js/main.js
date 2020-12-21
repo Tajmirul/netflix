@@ -76,7 +76,6 @@ $(document).ready(function () {
 		slidesToScroll: 1,
         prevArrow: '<i class="arrows far fa-chevron-left left"></i>',
         nextArrow: '<i class="arrows far fa-chevron-right right"></i>',
-        infinite: false,
         autoplay: true,
 		responsive: [
 			{
@@ -84,6 +83,28 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					autoplay: true
+				}
+			}
+		]
+	});
+
+	$('.slider-8').slick({
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		prevArrow: '<i class="arrows far fa-chevron-left left"></i>',
+		nextArrow: '<i class="arrows far fa-chevron-right right"></i>',
+		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 6,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 3,
 				}
 			}
 		]
@@ -128,4 +149,18 @@ $(document).ready(function () {
 			$('.product-img[data-popup=true] a').attr('href', $('.product-img[data-popup=true] img').attr('src'));
 		});
 	});
+
+	$.each($('.data-style'), function(index, item) {
+		console.log($(item).data('backgroundColor'))
+
+		$(item).css({
+			backgroundColor: $(item).data('backgroundColor'),
+			width: $(item).data('width'),
+		})
+	});
+
+	// $.each($('.rating-bar'), function() {
+	// 	console.log()
+	// });
+
 });
