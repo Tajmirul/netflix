@@ -159,8 +159,18 @@ $(document).ready(function () {
 		})
 	});
 
-	// $.each($('.rating-bar'), function() {
-	// 	console.log()
-	// });
+	// new js ----------------------------------
+	$('.toggle-password').click(function () {
+		$(this).parent().find('input').attr('type', () => {
+
+			if ($(this).parent().find('input').attr('type') === 'password') {
+				$(this).find('i').toggleClass('icofont-eye icofont-eye-blocked');
+				return 'text';
+			} else {
+				$(this).find('i').toggleClass('icofont-eye icofont-eye-blocked');
+				return 'password';
+			}
+		})
+	})
 
 });
